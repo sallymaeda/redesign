@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<link rel="stylesheet" href="home.css" />
+	<link href='https://fonts.googleapis.com/css?family=Nanum Gothic' rel='stylesheet'>
+	<Title>Craigslist</Title>
+
+</style>
+</head>
+<body>
+
+	<div id="sideMenu" class="menu">
+		<img class="closeIcon" src='./images/close-icon.png' onclick="closeMenu()"/>
+		<div class="menuIconContainer"><a><img class="menuIcon" src='./images/my-profile-icon.png'/>My Profile</a></div>
+		<div class="menuIconContainer"><a><img class="menuIcon" src='./images/browse-postings-icon.png'/>Postings</a></div>
+		<div class="menuIconContainer"><a><img class="menuIcon" src='./images/about-icon.png'/>About</a></div>
+		<div class="menuIconContainer"><a><img class="menuIcon" src='./images/blog-icon.png'/>Blog</a></div>
+		<div class="menuIconContainer"><a><img class="menuIcon" src='./images/help-icon.png'/>Help</a></div>
+		<div class="menuIconContainer"><a><img class="menuIcon" src='./images/log-out-icon.png'/>Log Out</a></div>
+	</div>
+
+	<div id="main">
+
+		<div class="rowHeader">
+			<img src="./images/menu-bar.png" onclick="openMenu()" class="menuBar">
+			<img src="./images/plus-button.png" class="plusButton">
+			<div class="titleHeader">
+				<div class="centerTitle">Craigslist</div>
+			</div>
+			<div class="rightHeader">
+				<div class="searchContainer">
+					<div class="search">
+						<div>
+							<input type="text" placeholder="       Search . . ." required>
+						</div>
+					</div>
+				</div>
+				<div class="rightMenuBar">
+					<img class="locationIcon" src="./images/location-icon.png" alt="Location"/>
+					<img class="profileIcon" src="./images/profile-icon.png" alt="Profile"/>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<form>
+				<h1>Any service at your fingertips.</h1>
+				<div class="containerForm">
+					<input type="text" class="search-field-postings" placeholder="Search postings...">
+					<input type="text" class="search-field-category" placeholder="Category">
+					<button class="search-button" type="button">Search</button>
+				</div>
+			</form>
+		</div>
+
+
+		
+		<div class="currentLocation">
+			<img class="currentLocationPin" src="./images/location-pin.png" alt="Current Location"/>
+			<div class="currentLocation">Current Location: Providence, RI, USA</div>
+		</div>
+	</div>
+
+</div>
+        <script>
+        	function openMenu() {
+        		document.getElementById("main").style.marginLeft = "250px";
+        		document.getElementById("sideMenu").style.width = "250px";
+        		
+        	}
+
+        	function closeMenu() {
+        		document.getElementById("main").style.marginLeft= "0";
+        		document.getElementById("sideMenu").style.width = "0";
+        		
+        	}
+        </script>
+    </body>
+    </html> 
